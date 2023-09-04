@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Ziad Assignment</title>
+</head>
+<body>
+    <header class="m-5 px-5 grid grid-cols-2 lg:grid-cols-3 justify-between container mx-auto">
+
+        <div class="flex justify-center flex-row items-center gap-2 col-span-2 lg:col-span-1 lg:justify-start cursor-pointer">
+            <!-- <img src="https://raw.githubusercontent.com/ProgrammingHero1/86-PHero-tube/main/Logo.png" alt="phero-logo"> -->
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_13_1206)"><path d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z" fill="#FF6B6B"/><path d="M32 16H0C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16Z" fill="#FF1F3D"/><path d="M11.6249 25.0625C11.4791 25.0625 11.3329 25.0286 11.1982 24.9597C10.8847 24.7994 10.6875 24.4771 10.6875 24.125V7.875C10.6875 7.52294 10.8848 7.20056 11.1982 7.04031C11.5116 6.88006 11.8884 6.90888 12.1739 7.115L23.4239 15.24C23.6679 15.4163 23.8125 15.699 23.8125 16C23.8125 16.301 23.6679 16.5838 23.4239 16.76L12.1739 24.885C12.0111 25.0026 11.8185 25.0625 11.6249 25.0625Z" fill="#F9F9F9"/><path d="M10.6875 16V24.125C10.6875 24.4771 10.8848 24.7994 11.1982 24.9597C11.3328 25.0286 11.4791 25.0625 11.6249 25.0625C11.8184 25.0625 12.0111 25.0026 12.1739 24.885L23.4239 16.76C23.6679 16.5838 23.8125 16.301 23.8125 16H10.6875Z" fill="#E2DFF4"/></g><defs><clipPath id="clip0_13_1206"><rect width="32" height="32" fill="white"/></clipPath></defs></svg>
+            <h1 class="text-[#252525] font-bold text-[32px] cursor-pointer" ><span class="text-[#ff133d]">PH</span> Tube</h1>
+        </div>
+
+
+        <div>
+            <h1 class="text-4xl font-semibold text-center">Blog Questions</h1>
+        </div>
+
+        <div class="flex justify-end lg:justify-end">
+            <a href="./index.html"><button class="bg-[#FF1F3D] py-4 px-8 text-lg text-white font-semibold rounded-lg shadow hover:bg-[#d83b50] hover:text-white active:bg-[#ff6d80]">Home</button></a>
+        </div>
+
+    </header>
+
+    <section class="container mx-auto">
+        <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" checked="checked" /> 
+            <div class="collapse-title text-2xl font-semibold">
+                Scope of var, let, and const
+            </div>
+            <div class="collapse-content"> 
+              <div class="bg-white py-4 rounded-lg shadow-md">
+                <!-- var -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold">var</h2>
+                    <p class="text-gray-700">Variables declared with <code class="bg-gray-200 p-1 rounded">var</code> have function scope.</p>
+                </div>
+        
+                <!-- let -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold">let</h2>
+                    <p class="text-gray-700">Variables declared with <code class="bg-gray-200 p-1 rounded">let</code> have block scope.</p>
+                </div>
+        
+                <!-- const -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-semibold">const</h2>
+                    <p class="text-gray-700">Variables declared with <code class="bg-gray-200 p-1 rounded">const</code> have block scope and cannot be reassigned after initialization.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-2xl font-semibold">
+                Use Cases of null and undefined
+            </div>
+            <div class="collapse-content "> 
+              <div class="bg-white py-4 rounded-lg shadow-md">
+
+        <!-- null -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">null</h2>
+            <p class="text-gray-700">`null` is used to intentionally represent the absence of any object value or an empty variable.</p>
+            <ul class="list-disc ml-6">
+                <li>Initializing variables or object properties before assigning a meaningful value.</li>
+                <li>As a placeholder for an object or value that doesn't exist yet but will be assigned later.</li>
+                <li>To indicate the absence of an element in an array or a missing property in an object.</li>
+            </ul>
+            <code class="bg-gray-200 p-1 rounded">let user = null;</code>
+            <code class="bg-gray-200 p-1 rounded">let book = { title: "JavaScript Programming", author: null };</code>
+        </div>
+
+        <!-- undefined -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold">undefined</h2>
+            <p class="text-gray-700">`undefined` represents the absence of a value or an uninitialized variable.</p>
+            <ul class="list-disc ml-6">
+                <li>Variables that have been declared but not assigned a value.</li>
+                <li>Function parameters that were not provided with values.</li>
+                <li>When an object property does not exist.</li>
+            </ul>
+            <code class="bg-gray-200 p-1 rounded">let x;</code>
+            <code class="bg-gray-200 p-1 rounded">function printMessage(message) { /* ... */ }</code>
+            <code class="bg-gray-200 p-1 rounded">let person = { name: "John" }; console.log(person.age);</code>
+        </div>
+        </div>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200 my-10">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-2xl font-semibold">
+                What do you mean by REST API?
+            </div>
+            <div class="collapse-content"> 
+                <div class="bg-white py-4 rounded-lg shadow-md">
+                    <p class="text-gray-700">
+                        A <span class="font-semibold">REST API</span> (Representational State Transfer Application Programming Interface) is a set of rules and conventions for building and interacting with web services.
+                    </p>
+                    <p class="mt-2">
+                        It follows the principles of simplicity, statelessness, and a client-server architecture to enable communication between different software systems over the internet.
+                    </p>
+                    <p class="mt-2">
+                        REST APIs use standard HTTP methods like GET, POST, PUT, and DELETE to perform CRUD (Create, Read, Update, Delete) operations on resources, typically represented in formats like JSON or XML.
+                    </p>
+                    <p class="mt-2">
+                        RESTful services are widely used for web and mobile applications to access and manipulate data from servers or databases in a standardized and scalable manner.
+                    </p>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
+
+
+</body>
+</html>
